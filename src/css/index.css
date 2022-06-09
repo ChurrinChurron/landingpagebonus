@@ -1,0 +1,496 @@
+@font-face {
+    font-family: markPro;
+    src: url(../../tipografias/FontFont-MarkPro.otf);
+    font-weight: 400;
+    }
+
+@font-face {
+    font-family: myriadRegular;
+    src: url(../../tipografias/MyriadPro-Regular.otf);
+    font-weight: 500;
+    }
+
+@font-face {
+    font-family: markProBold;
+    src: url(../../tipografias/FontFont-MarkPro-Bold.otf);
+    font-weight: 700;
+    }
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.none {
+
+    display: none;
+}
+
+/*Contenido de la pagína en general (Mobile First)*/
+
+body {
+
+    min-height: 100vh;
+    background-color: #fff;
+    font-family: markPro;
+}
+
+header {
+
+    
+}
+
+.navMovil {
+
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 7px 12px 0 rgb(200, 200, 200);
+    padding: 1.6em 1em;
+    z-index: 2;
+}
+
+.navMovil__contenido {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navMovil__logos > #bonus-logo-nav {
+
+    width: 7em;
+    padding-right: 0.5em;
+    border-right: 2px solid rgb(220, 220, 220);
+} 
+
+.navMovil__logos > #misiones-logo-nav {
+
+    width: 4.5em;
+    padding-left: 0.8em;
+} 
+
+.navMovil__boton {
+
+    padding: 0.3em 0.9em;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 3px;
+    background: transparent;
+    transition: .2s;
+}
+
+.navMovil__boton:hover {
+
+    border: 4px solid rgb(111, 111, 111);
+    border-radius: 4px;
+}
+
+.navMovil__boton > img {
+
+    width: 2.4em;
+}
+
+.navMovil__menu {
+
+    margin-top: 1.8em;
+}
+
+.navMovil__menu > a {
+
+    display: block;
+    text-decoration: none;
+    margin-top: 1.5em;
+    color: rgb(93, 93, 93);
+    font-family: markProBold;
+}
+
+.header__contenido {
+
+    position: relative;
+    top: 9rem;
+}
+
+.header__texto {
+
+    padding: 1.8em;
+    border-radius: 0 0 80px 80px;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.header__texto > h1 {
+
+    color: #0049ac;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.header__texto > h2 {
+
+    color: #0049ac;
+    text-align: center;
+    font-size: 18px;
+}
+
+.header__texto > p {
+
+    color: #3f3f3f;
+    font-weight: 700;
+    text-align: justify;
+}
+
+#texto-puntos {
+
+    color: #0049ac;
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    max-width: 24em;
+    margin: 0 auto;
+}
+
+form > label {
+
+    color: #3f3f3f;
+    font-weight: 700;
+}
+
+.docuHeader__contenido {
+
+    display: grid;
+    position: relative;
+}
+
+.docuHeader__contenido > #docu-selec {
+
+    position: absolute;
+    top: 0.7em;
+    right: 0.8em;
+    border: none;
+    background: transparent;
+    color: #3f3f3f;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#docu-header, #numero-header, #fecha-header {
+
+    margin: 6px 0;
+    outline: none;
+    padding: 0.7em 3.2em 0.7em 0.8em;
+    border-radius: 13px;
+    font-family: markPro;
+    border: 1px solid #3f3f3f;
+    font-size: 12px;
+    color: #3f3f3f;
+}
+
+.terminosHeader {
+
+    margin: 15px 0;
+}
+
+#terminos-texto, #terminos-texto > a {
+
+    color: #3f3f3f;
+    font-size: 15px;
+}
+
+#donarHeader{
+
+    text-decoration: none;
+    outline: none;
+    background-color: #fdda3e;
+    color: #0049ac;
+    padding: 0.7em 2.8em;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: .4s;
+    border: none;
+    font-family: markProBold;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    top: 2em;
+}
+
+.header__imagen {
+
+    background-image: url(../../imagenes/fondo-header.jpg);
+    background-repeat: no-repeat;
+    background-size: 50em;
+    background-position: top;
+    position: relative;
+    bottom: 8em;
+    height: 33em;
+}
+
+.imagen__contenido {
+
+    position: absolute;
+    bottom: 1.3em;
+    left: 0.8em;
+    width: 18.6em;
+    text-align: center;
+    background-color: rgba(100%, 100%, 100%, 0.9);
+    padding: 0.9em 1.3em;
+    border-radius: 50%;
+    padding: 2.5em;
+    font-size: 13px;
+}
+
+.imagen__contenido > p {
+
+    color: #3f3f3f;
+}
+
+main {
+
+    margin-top: 1em;
+    position: relative;
+}
+
+#donarEnlace {
+
+    text-decoration: none;
+    background-color: #fdda3e;
+    color: #0049ac;
+    padding: 0.6em 2em;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: .4s;
+    font-family: markProBold;
+    max-width: 12em;
+    margin: 1.6em auto 0 auto;
+    display: block;
+    text-align: center;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 3;
+}
+
+.meta {
+
+    background-image: url(../../imagenes/fondo-metas.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 3.5em 2em;
+}
+
+.meta > h2 {
+
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+}
+
+.meta__puntos, .funcion__puntos, .compraPuntos__puntos {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5em 0;
+}
+
+.puntos__bordes {
+
+    margin: 1.8em 0;
+    border: 2px dashed #dadada;
+    padding: 0.5em;
+    border-radius: 50%;
+}
+
+.puntos__circulos {
+
+    color: #0049ac;
+    background-color: #dadada;
+    text-align: center;
+    border-radius: 50%;
+    width: 13.05em;
+    padding: 2.8em 2em;
+    font-size: 15px;
+}
+
+#circulo-dos {
+
+    padding: 2.4em;
+}
+
+#circulo-tres {
+
+    padding: 1.8em;
+}
+
+.puntos__numeros {
+
+    font-size: 27px;
+    font-family: markProBold;
+}
+
+.meta > h3 {
+
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+}
+
+.meta__descrip {
+
+    text-align: center;
+    color: #fff;
+}
+
+.meta__descrip > h4 {
+
+    margin: 1.8em 0;
+    font-size: 17px;
+}
+
+.funcion {
+
+    padding: 3.5em 2em;
+    background-color: #dadada;
+}
+
+.funcion > h2 {
+
+    color: #0049ac;
+    font-family: markProBold;
+    text-align: center;
+}
+
+.funcion__puntos > .puntos__circulos {
+
+    color: #3f3f3f;
+    background-color: #fdda3e;
+    text-align: center;
+    border-radius: 50%;
+    width: 13.05em;
+    padding: 2.8em 2em;
+    font-size: 15px;
+    margin: 1.8em 0;
+}
+
+.funcion__puntos > .puntos__circulos > .puntos__numeros {
+
+    font-size: 27px;
+    font-family: markProBold;
+    color: #0049ac;
+}
+
+.funcion__puntos > #circulo-dos, .funcion__puntos > #circulo-tres {
+
+    padding: 2.2em;
+}
+
+.funcion__puntos > .puntos__signos {
+
+    font-size: 32px;
+    font-family: markProBold;
+    color: #0049ac;
+}
+
+.funcion > h3 {
+
+    font-family: markProBold;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 1.3em;
+}
+
+.funcion__descripcion {
+
+    color: #3f3f3f;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 18px;
+    text-align: justify;
+}
+
+.compraPuntos {
+
+    background-image: url(../../imagenes/fondo-compra.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 3.5em 2em;
+}
+
+.compraPuntos > h2 {
+
+    color: #fff;
+    text-align: center;
+    font-size: 27px;
+}
+
+.compraPuntos > h3 {
+
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    font-size: 22px;
+    margin: 1.5em 0;
+}
+
+.compraPuntos__puntos > .puntos__circulos {
+
+    color: #3f3f3f;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    width: 13.05em;
+    padding: 2.8em 2em;
+    font-size: 15px;
+    margin: 1.8em 0;
+}  
+
+.compraPuntos__puntos > #circulo-uno {
+
+    padding: 2.8em 2em;
+}
+
+.compraPuntos__puntos > #circulo-dos {
+
+    padding: 1.7em 2.5em;
+}
+
+.compraPuntos__puntos > .puntos__circulos > .puntos__numeros {
+
+    font-family: markProBold;
+    color: #0049ac;
+    font-size: 42px;
+}
+
+.compraPuntos__puntos > .puntos__circulos > .puntos__numeros > span {
+
+    font-family: markPro;
+    font-size: 32px;
+    margin-right: 0.150em;
+}
+
+.compraPuntos > a {
+
+    text-decoration: none;
+    background-color: #fdda3e;
+    color: #0049ac;
+    padding: 0.7em 0.8em;
+    border-radius: 20px;
+    font-size: 17px;
+    transition: .4s;
+    font-family: markProBold;
+    max-width: 18em;
+    margin: 1.6em auto 0 auto;
+    display: block;
+    text-align: center;
+}
