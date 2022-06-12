@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/index.css">
+    <script src="https://kit.fontawesome.com/95cc484b53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="donaAqui">
+        <!--NAV MOVIL-->
+        <nav class="navMovil">
+            <div class="navMovil__contenido">
+                <div class="navMovil__logos">
+                    <img src="imagenes/bonus-logo.png" id="bonus-logo-nav" alt="bonus-logo">
+                    <img src="imagenes/misiones-logo-nav.png" id="misiones-logo-nav" alt="misiones-logo-nav">
+                </div>
+                <button class="navMovil__boton">
+                    <img src="imagenes/icon-menu.svg" alt="icon-menu">
+                </button>
+            </div>
+            <div class="navMovil__menu none">
+                <a href="#donaAqui">Dona aquí</a>
+                <a href="#meta">¿Cuál es la meta?</a>
+                <a href="#funcion">¿Cómo funciona?</a>
+                <a href="#galeria">Fotos y vídeos</a>
+                <a href="#compraPuntos">Compra puntos para donar</a>
+                <a href="#conoceMas">Conoce más</a>
+                <a href="#prensa">Prensa</a>
+            </div>
+        </nav>
+        <!--NAV DESKTOP-->
+        <nav class="navDesktop">
+            <div class="navDesktop__logos">
+                <img src="imagenes/bonus-logo.png" id="bonus-logo-nav" alt="bonus-logo">
+                <img src="imagenes/misiones-logo-nav.png" id="misiones-logo-nav" alt="misiones-logo-nav">
+            </div>
+            <div class="navDesktop__menu">
+                <a href="#donaAqui" class="active">Dona aquí</a>
+                <a href="#meta" class="">¿Cuál es la meta?</a>
+                <a href="#funcion" class="">¿Cómo funciona?</a>
+                <a href="#galeria" class="">Fotos y vídeos</a>
+                <a href="#compraPuntos" class="">Compra puntos para donar</a>
+                <a href="#conoceMas" class="">Conoce más</a>
+                <a href="#prensa" class="">Prensa</a>
+            </div>
+        </nav>
+        <div class="header__contenido">
+            <div class="header__texto">
+                <h1>NUNCA ES TARDE PARA ESTUDIAR</h1>
+                <h2>En Villa María del Triunfo, 8 de cada 10 madres abandonan el colegio</h2>
+                <br/><br/>
+                <p>Hoy tienes la oportunidad de ayudarlas a culminar sus estudios escolares y 
+                    continuar en la búsqueda de sus sueños.
+                </p>
+                <br/>
+                <p>Junto a Misiones de Emergencia y a la UGEL 01 se continuará con la 
+                    conectividad de 25 Aulas de Emergencia, con 10 nuevas aulas completamente
+                     equipadas* para que 300 madres puedan estudiar con valor oficial 
+                     en sus propias comunidades.
+                </p>
+                <br/>
+                <p id="texto-puntos">Por 75 puntos estás donando 1 día de estudio para 1 madre.
+                    Dona tus puntos y Bonus los DUPLICA.
+                </p>
+                <br/>
+                <form id="ingresoDatosHeader">
+                    <label>Ingresa tus datos:</label>
+                    <div id="input-document">
+                        <div><label class="type-document"> D.N.I</label><img class="modal-document" src="imagenes/seleccion_abajo.svg" alt="arrow-down"></div>
+                        <input type="number" name="document" id="docu" placeholder="Nº de documento">
+                        <div class="icon"><img src="imagenes/dni.svg" alt="dni"></div>
+                    </div>
+                    <div id="input-birthday">
+                        <label id="type-birthday">Fecha de nacimiento</label>
+                        <input type="text" name="birth" id="birthday" placeholder="Día / Mes / Año" maxlength="10">
+                        <div class="icon"><img src="imagenes/nacimiento.svg" alt="birthday"></div>
+                    </div>
+                    <div class="terms-list">
+                        <div class="terms">
+                            <input type="checkbox" name="terms" id="condiciones" class="moz-check">
+                            <label for="condiciones" id="terms-text">Acepto los <a href="#">términos y condiciones</a></label>
+                        </div>
+                    </div>
+                    <input type="submit" name="donar" id="donarHeader" value="DONA AQUÍ">
+                </form>
+            </div>
+            <div class="header__imagen">
+                <div class="imagen__contenido">
+                    <p>* 10 módulos nuevos de 30m², paneles solares, computadoras, proyectores, ecrans, 
+                        carpetas, pizarras acrílicas, tintas para impresora y 25 planes de internet por 
+                        un año para aulas implementadas durante la campaña Aulas de Emergencia 2021.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <a href="#" id="donarEnlace">DONA AQUÍ</a>
+        <section class="meta" id="meta">
+            <h2>Con tu donación ayudas a que 300 madres de bajos recursos culminen sus 
+                estudios de primaria y/o secundaria
+            </h2>
+            <div class="meta__puntos">
+                <div class="puntos__bordes">
+                    <div class="puntos__circulos">
+                        <p>Nuestra meta:</p><br/>
+                        <p class="puntos__numeros" id="puntosMeta">7,000,000</p><br/>
+                        <p>puntos</p>
+                    </div>
+                </div>
+                <div class="puntos__bordes">
+                    <div class="puntos__circulos" id="circulo-dos">
+                        <p>Ya tenemos</p><br/>
+                        <p class="puntos__numeros" id="puntosTotal">23,184</p><br/>
+                        <p>puntos donados en total</p>
+                    </div>
+                </div>
+                <div class="puntos__bordes">
+                    <div class="puntos__circulos" id="circulo-tres">
+                        <p>Para que</p><br/>
+                        <p class="puntos__numeros" id="cantidadMadre">01</p><br/>
+                        <p>madre(s) estudie(n) 1 año académico</p>
+                    </div>
+                </div>
+            </div>
+            <h3>¡Cada punto suma!</h3>
+            <div class="meta__texto">
+                <div class="meta__descrip">
+                    <h4>72 puntos equivalen a 1 día de estudio para 1 madre</h4>
+                    <p>La meta de 7 millones de puntos garantiza la implementación 
+                        de 10 aulas nuevas completamente equipadas + 25 planes de 
+                        internet por un año para 300 madres, quienes estudiarán 46 
+                        semanas operativas. Bonus duplicará una bolsa de 3.5 millones 
+                        como máximo.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="funcion" id="funcion">
+            <h2>Con tu ayuda instalaremos un total de 10 nuevas aulas completamente 
+                equipadas para llevar educación a las comunidades locales
+            </h2>
+            <div class="funcion__puntos">
+                <div class="puntos__circulos">
+                    <p>Por cada</p><br/>
+                    <p class="puntos__numeros" id="puntosDonados">72</p><br/>
+                    <p>puntos donados</p>
+                </div>
+                <p class="puntos__signos">+</p>
+                <div class="puntos__circulos" id="circulo-dos">
+                    <p>Bonus dona</p><br/>
+                    <p class="puntos__numeros" id="puntosAdicion">72</p><br/>
+                    <p>puntos adicionales</p>
+                </div>
+                <p class="puntos__signos">=</p>
+                <div class="puntos__circulos" id="circulo-tres">
+                    <p>Para que</p><br/>
+                    <p class="puntos__numeros" id="cantidadMadreDias">01</p><br/>
+                    <p>madre(s) estudie(n) 2 días</p>
+                </div>
+            </div>
+            <h3>¡Cada punto suma!</h3>
+            <p class="funcion__descripcion"> Se construirán 10 aulas de 30m² con 10 
+                sistemas de energía solar, 25 planes de internet por un año, 100 carpetas 
+                unipersonales, 10 PCs, 10 proyectores, 10 Ecran, 10 pizarras acrílicas, 16 
+                tintas de impresora.
+            </p>
+        </section>
+        <section class="galeria" id="galeria">
+            <div class="galeria__contenido">
+                <div class="galeria__carrusel">
+                    <h2>Galería</h2>
+                    <div class="carrusel__fotos">
+                        <!--<img src="imagenes/ejemplo-carrusel.jpg" alt="">
+                        <img src="imagenes/ejemplo-carrusel.jpg" alt="">
+                        <img src="imagenes/ejemplo-carrusel.jpg" alt="">
+                        <img src="imagenes/ejemplo-carrusel.jpg" alt="">
+                        <img src="imagenes/ejemplo-carrusel.jpg" alt="">
+                        <img src="imagenes/ejemplo-carrusel.jpg" alt="">
+                        <img src="imagenes/ejemplo-carrusel.jpg" alt="">
+                        <img src="imagenes/ejemplo-carrusel.jpg" alt="">
+                        <img src="imagenes/ejemplo-carrusel.jpg" alt="">
+                        <img src="imagenes/ejemplo-carrusel.jpg" alt="">-->
+                    </div>
+                </div>
+                <div class="galeria__video">
+                    <h2>Testimonios</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EpT95bKyKh8"
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+            </div>
+            <p>Créditos: Aulas de Emergencia</p>
+        </section>
+        <section class="compraPuntos" id="compraPuntos">
+            <h2>¿Te faltan puntos para donar?</h2>
+            <h3>Tu donación beneficiará a que 300 madres de bajos recursos puedan 
+                estudiar y cumplir sus sueños.
+            </h3>
+            <div class="compraPuntos__puntos">
+                <div class="puntos__circulos" id="circulo-uno">
+                    <p>Por cada</p><br/>
+                    <p class="puntos__numeros"><span>s/</span>6</p><br/>
+                </div>
+                <img src="imagenes/flecha.png" alt="flecha">
+                <div class="puntos__circulos" id="circulo-dos">
+                    <p>Obtendrás</p><br/>
+                    <p class="puntos__numeros">100</p><br/>
+                    <p>puntos para donar</p>
+                </div>
+            </div>
+            <h3>¡No pierdas la oportunidad de seguir ayudando!</h3>
+            <a href="#">Compra punto para las madres</a>
+        </section>
+        <section class="conoceMas" id="conoceMas">
+            <h2>¿Cómo transformamos tu donación en ayuda?</h2>
+            <div class="conoceMas__puntos">
+                <div class="puntos__pasos">
+                    <img src="imagenes/paso1.png" alt="paso-1">
+                    <p>Recibimos tu donación y la duplicamos, creando una gran bolsa 
+                        de puntos.
+                    </p>
+                </div>
+                <div class="puntos__pasos">
+                    <img src="imagenes/paso2.png" alt="paso-2">
+                    <p>Transformamos la bolsa de puntos recaudados en equipamiento y 
+                        materiales escolares.
+                    </p>
+                </div>
+                <div class="puntos__pasos">
+                    <img src="imagenes/paso3.png" alt="paso-3">
+                    <p>AULAS DE EMERGENCIA<br/> recibe los implementos para aondicionar 
+                        los espacios de estudio.
+                    </p>
+                </div>
+                <div class="puntos__pasos">
+                    <img src="imagenes/paso4.png" alt="paso-4">
+                    <p>Muchas madres retomarán sus estudios de primaria y secundaria.</p>
+                </div>
+            </div>
+        </section>
+        <section class="prensa" id="prensa">
+            <div class="prensa__nota">
+                <h2>Nota de prensa</h2>
+                <div class="nota__contenido">
+                    <h3>De regreso a las aulas</h3><br/>
+                    <p>Iniciativa social busca que 300 madres de bajos recursos culminen sus estudios 
+                        de primaria y secundaria.
+                    </p><br/>
+                    <p>"Aulas de Emergencias", es una iniciativa que ha implementado hasta ahora 60 
+                        puntos de acceso a internet en Lima Sur para que los escolares no pierdan 
+                        clases durante la pandemia, ahora busca ayudar a las madres de familia de 
+                        las ollas comunes.
+                    </p><br/>
+                    <p>8 de cada 10 mujeres, que viven en Villa María del Triunfo donde se ubican 
+                        las ollas coumunes, no han terminado el colegio.
+                    </p><br/>
+                    <p>En el Perú existen 8 millones 777 mil 612 mujeres que son madres y representan 
+                        el 64.4% de la población femenina del país, según datos del INEI. Además, 31 
+                        de cada 100 hogares del Perú son dirigidos por mujeres, quienes representan 
+                        un 33.4% de los líderes en el hogar en el área urbana y un 23.3% en la rural, 
+                        siendo de esta manera las encargadas de brindar el sustento diario para sus 
+                        hijos... <span class="verMas">ver más</span>
+                    </p>
+                </div>
+            </div>
+            <div class="prensa__video">
+                <h2>Campañas anteriores</h2>
+                <div class="video__contenido">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EpT95bKyKh8"
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                    <p>En el 2021, junto a Misiones de Emergencia, realizamos esta campaña construyendo aulas para 
+                        ayudar a cientos de niños a poder seguir sus estudios... <span class="verMas">ver más</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__contacto">
+            <h3>¡Contáctanos!</h3>
+            <p>A nuestro Call Center al <b>+(01) 610 5252</b> o vía WhatsApp al <b>946 348 142</b></p>
+        </div>
+        <div class="footer__redesSoc">
+            <p>¡Síguenos en nuestras redes!</p>
+            <div class="redesSoc__enlaces">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="src/js/main.js"></script>
+</html>
