@@ -104,6 +104,7 @@ body {
 .navMovil__menu {
 
     margin-top: 1.8em;
+    text-align: center;
 }
 
 .navMovil__menu > a {
@@ -134,7 +135,7 @@ body {
 
     color: #0049ac;
     text-align: center;
-    font-size: 26px;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 
@@ -142,14 +143,14 @@ body {
 
     color: #0049ac;
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .header__texto > p {
 
     color: #3f3f3f;
     font-weight: 700;
-    text-align: justify;
+    text-align: left;
 }
 
 #texto-puntos {
@@ -260,7 +261,7 @@ input:placeholder-shown {
 
 input:focus, input:not(placeholder-shown) {
 
-    font-family: markProMedium;
+    font-family: markPro;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -329,7 +330,7 @@ input[type="checkbox"]:checked::after {
 
 .terms-list {
 
-    margin-top: 10px;
+    margin-top: 6px;
 }
 
 .terms {
@@ -361,9 +362,9 @@ input[type="checkbox"]:checked::after {
     outline: none;
     background-color: #fdda3e;
     color: #0049ac;
-    padding: 0.7em 2.8em;
+    padding: 0.6em 2.8em;
     border-radius: 20px;
-    font-size: 18px;
+    font-size: 17px;
     transition: .4s;
     border: none;
     font-family: markProBold;
@@ -440,7 +441,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 3.5em 2em;
+    padding: 6.5em 2em;
 }
 
 .meta > h2 {
@@ -519,7 +520,7 @@ main {
 
 .funcion {
 
-    padding: 3.5em 2em;
+    padding: 6.5em 2em;
     background-color: #dadada;
 }
 
@@ -580,7 +581,7 @@ main {
 
 .galeria  {
 
-    padding: 2.8em 0;
+    padding: 6.8em 0;
 }
 
 .galeria h2 {
@@ -673,7 +674,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 3.5em 2em;
+    padding: 6.5em 2em;
 }
 
 .compraPuntos > h2 {
@@ -753,7 +754,7 @@ main {
 .conoceMas {
 
     background-color: #dadada;
-    padding: 3.5em 2em;
+    padding: 6.5em 2em;
 }
 
 .conoceMas > h2 {
@@ -784,7 +785,7 @@ main {
 
 .prensa {
 
-    padding: 2.8em 0;
+    padding: 6.8em 0;
 }
 
 .prensa__nota {
@@ -1021,10 +1022,11 @@ footer {
         font-family: markProBold;
     }
 
-    .navDesktop__menu > a {
+    .navDesktop__menu > a:link {
 
         text-decoration: none;
         margin: 0 0.4em;
+        color: #0049ac;
     }
 
     .navDesktop__menu > a:visited {
@@ -1041,35 +1043,41 @@ footer {
 
     header {
 
-        height: 51.8em;
+        height: 42em;
         background-color: #dadada;
     }
     
     .header__contenido {
 
         display: flex;
-        top: 6rem;
+        top: 5.8rem;
         background-color: #dadada;
     }
 
     .header__texto {
 
-        width: 47vw;
+        width: 50vw;
         padding: 2em;
         background-color: #dadada;
         border-radius: 0;
+    }
+
+    .header__texto > h1 {
+
+        font-size: 22px;
     }
     
     .header__texto > h2 {
     
         color: #0049ac;
         text-align: center;
-        font-size: 16px;
+        font-size: 15px;
     }
     
     .header__texto > p {
     
         text-align: justify;
+        font-size: 15px;
     }
     
     form {
@@ -1103,14 +1111,14 @@ footer {
         background-size: cover;
         background-position: center;
         bottom: 0;
-        height: 46.8em;
+        height: 37em;
         width: 53vw;
         border-radius: 43% 0 0 43%;
     }
     
     .imagen__contenido {
     
-        bottom: 1.6em;
+        bottom: 2em;
         left: 27%;
         width: 70%;
         text-align: justify;
@@ -1146,12 +1154,7 @@ footer {
 
     .meta {
 
-        padding: 3.5em;
-    }
-    
-    .meta > h2 {
-    
-        
+        padding: 7em 3.5em 4.5em 3.5em;
     }
     
     .puntos__bordes {
@@ -1183,12 +1186,7 @@ footer {
 
     .funcion {
 
-        padding: 3.5em;
-    }
-    
-    .funcion > h2 {
-    
-        
+        padding: 7em 3.5em 4.5em 3.5em;
     }
     
     .funcion__puntos > .puntos__circulos {
@@ -1221,7 +1219,7 @@ footer {
 
     .galeria  {
 
-        padding: 3.5em;
+        padding: 7em 3.5em 4.5em 3.5em;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -1247,6 +1245,7 @@ footer {
         color: #619cef;
         font-size: 22px;
         margin-top: 2.2em;
+        margin-left: 5vw;
     }
     
     .galeria__carrusel {
@@ -1320,7 +1319,7 @@ footer {
 
     .compraPuntos {
 
-        padding: 3.5em;
+        padding: 7em 3.5em 4.5em 3.5em;
     }
 
     .compraPuntos > h2 {
@@ -1356,7 +1355,7 @@ footer {
     
     .conoceMas {
 
-        padding: 6.2em 3.5em 3.5em 3.5em;
+        padding: 7em 3.5em 4.5em 3.5em;
     }
     
     .conoceMas > h2 {
@@ -1397,7 +1396,7 @@ footer {
 
     .prensa {
 
-        padding: 3.5em;
+        padding: 7em 3.5em 4.5em 3.5em;
         align-items: flex-start;
     }
     
