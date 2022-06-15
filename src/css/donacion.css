@@ -433,8 +433,7 @@ input[type="checkbox"]:checked::after {
 
 #actualDatos {
 
-    top: 2;
-    font-size: 15px;
+    top: 2em;
 }
 
 #ingresoFinal {
