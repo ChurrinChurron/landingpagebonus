@@ -1,3 +1,5 @@
+let menuBoton = document.querySelector(".navMovil__boton");
+let movilMenu = document.querySelector(".navMovil__menu");
 let tipoDocu = document.querySelector(".type-document");
 let inputDocu = document.getElementById("docu");
 let inputDate = document.getElementById("birthday");
@@ -14,6 +16,13 @@ let botonUno = document.getElementById("donar-uno");
 let botonDos = document.getElementById("donar-dos");
 let pasos = document.querySelectorAll(".pasos");
 let imagenes = document.querySelectorAll("main img");
+
+//FUNCION MENU MOVIL
+
+menuBoton.addEventListener("click", () => {
+
+    movilMenu.classList.toggle("none");
+});
 
 //FUNCION MODAL
 
@@ -137,9 +146,18 @@ botonDos.addEventListener("click", e => {
 
     e.preventDefault();
 
-    for(let i = 0; i < formulario.length; i++) {
+    if(window.innerWidth > 992) {
 
-        formulario[i].style.right = "36.2em";
+        for(let i = 0; i < formulario.length; i++) {
+
+            formulario[i].style.right = "36.2em";
+        }
+    } else if(window.innerWidth < 992) {
+
+        for(let i = 0; i < formulario.length; i++) {
+
+            formulario[i].style.right = "36.8em";
+        }
     }
 
     for(let i = 0; i < pasos.length; i++) {

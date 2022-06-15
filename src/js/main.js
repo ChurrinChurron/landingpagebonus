@@ -10,7 +10,7 @@ let maxNum = 8;
 let selDocumento = document.getElementById("selec-dni");
 let selPasaporte = document.getElementById("selec-pasaporte");
 let selCe = document.getElementById("selec-ce");
-let formulario = document.getElementById("formularioDatos");
+let formulario = document.getElementById("ingresoDatosHeader");
 let abrirListaDocu = document.querySelector(".modal-document");
 let verMasPrensa = document.querySelectorAll(".verMas");
 let infoPrensa = document.querySelector(".info-prensa");
@@ -34,7 +34,7 @@ window.addEventListener("scroll", () => {
     secciones.forEach(sec => {
 
         let top = window.scrollY;
-        let offset = sec.offsetTop + 750;
+        let offset = sec.offsetTop + 600;
         let height = sec.offsetHeight;
         let id = sec.getAttribute("id");
 
@@ -60,7 +60,7 @@ window.addEventListener("scroll", () => {
 
 //FUNCION ENLACE FLOTANTE DONACION
 
-window.addEventListener("resize", () => {
+donarAqui.style.display = "none";
 
     if(window.innerWidth < 992) {
 
@@ -68,7 +68,7 @@ window.addEventListener("resize", () => {
 
             let top = window.scrollY;
         
-            if((top < 450) || (top > 4400 && top < 5500)) {
+            if((top < 600) || (top > 4500 && top < 5900)) {
         
                 donarAqui.style.display = "none";
         
@@ -84,7 +84,7 @@ window.addEventListener("resize", () => {
 
             let top = window.scrollY;
         
-            if((top < 450) || (top > 1990 && top < 2700)) {
+            if((top < 200) || (top > 2350 && top < 3050)) {
         
                 donarAqui.style.display = "none";
         
@@ -94,7 +94,6 @@ window.addEventListener("resize", () => {
             }
         });
     }
-})
 
 //FUNCION MODALES (POP-UPS)
 
@@ -215,3 +214,42 @@ let inputDateMask = function inputDateMask(el) {
     };
 
     inputDateMask(inputDate);
+
+    //FUNCION GALERIA
+
+    let img = 1;
+
+    mostrarImagen(img);
+
+    function slider(n){
+
+        mostrarImagen(img +=n)
+    }
+
+    function sliderActual(n){
+
+        mostrarImagen(img = n)
+    }
+
+    function mostrarImagen(n) {
+
+        let i;
+        let imagenCarrusel = document.querySelectorAll(".fotos img");
+
+        if(n > imagenCarrusel.length) {
+
+            img = 1;
+        }
+        
+        if(n < 1) {
+
+            img = imagenCarrusel.length;
+        }
+
+        for(i=0; i < imagenCarrusel.lenght; i++) {
+
+            imagenCarrusel[i].style.display = "none";
+        } 
+
+        imagenCarrusel[img - 1].style.display= "block";
+    }
