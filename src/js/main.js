@@ -217,39 +217,46 @@ let inputDateMask = function inputDateMask(el) {
 
     //FUNCION GALERIA
 
-    let img = 1;
-
-    mostrarImagen(img);
-
-    function slider(n){
-
-        mostrarImagen(img +=n)
+    let sliderimagenes = document.querySelectorAll(".fotos img");
+    let izquierda = document.querySelector("#izquierda");
+    let derecha = document.querySelector("#derecha");
+    let current = 0;
+    
+  function reset() {
+    for (let i = 0; i < sliderimagenes.length; i++) {
+      sliderimagenes[i].style.display = "none";
     }
-
-    function sliderActual(n){
-
-        mostrarImagen(img = n)
+  }
+    
+  function startSlide() {
+    reset();
+    sliderimagenes[0].style.display = "block";
+  }
+    
+  function slideLeft() {
+    reset();
+    sliderimagenes[current - 1].style.display = "block";
+    current--;
+  }
+    
+  function slideRight() {
+    reset();
+    sliderimagenes[current + 1].style.display = "block";
+    current++;
+  }
+    
+  izquierda.addEventListener("click", function () {
+    if (current === 0) {
+      current = sliderimagenes.length;
     }
-
-    function mostrarImagen(n) {
-
-        let i;
-        let imagenCarrusel = document.querySelectorAll(".fotos img");
-
-        if(n > imagenCarrusel.length) {
-
-            img = 1;
-        }
-        
-        if(n < 1) {
-
-            img = imagenCarrusel.length;
-        }
-
-        for(i=0; i < imagenCarrusel.lenght; i++) {
-
-            imagenCarrusel[i].style.display = "none";
-        } 
-
-        imagenCarrusel[img - 1].style.display= "block";
+    slideLeft();
+  });
+    
+  derecha.addEventListener("click", function () {
+    if (current === sliderimagenes.length - 1) {
+      current = -1;
     }
+    slideRight();
+  });
+    
+  startSlide();
