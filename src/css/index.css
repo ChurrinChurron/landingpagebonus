@@ -595,9 +595,9 @@ main {
 
 .galeria > p {
 
-    color: #619cef;
-    font-size: 20px;
-    margin-top: 3em;
+    color: #0049ac;
+    font-size: 18px;
+    margin-top: 2em;
 }
 
 .galeria__carrusel {
@@ -654,7 +654,7 @@ main {
     width: 3.5em;
 }
 
-.carrusel__flechas > .izquierda {
+.carrusel__flechas > #izquierda {
 
     transform: rotate(180deg);
     position: relative;
@@ -1242,9 +1242,8 @@ footer {
     
     .galeria > p {
     
-        color: #619cef;
-        font-size: 22px;
-        margin-top: 2.2em;
+        font-size: 19px;
+        margin-top: 0;
         margin-left: 5vw;
     }
     
