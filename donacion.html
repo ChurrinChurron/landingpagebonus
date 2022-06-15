@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/donacion.css">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+</head>
+<body>
+    <header>
+        <!--NAV MOVIL-->
+        <nav class="navMovil">
+            <div class="navMovil__contenido">
+                <div class="navMovil__logos">
+                    <img src="imagenes/bonus-logo.png" id="bonus-logo-nav" alt="bonus-logo">
+                    <img src="imagenes/misiones-logo-nav.png" id="misiones-logo-nav" alt="misiones-logo-nav">
+                </div>
+                <button class="navMovil__boton">
+                    <img src="imagenes/icon-menu.svg" alt="icon-menu">
+                </button>
+            </div>
+            <div class="navMovil__menu none">
+                <a href="index.html">Dona aquí</a>
+                <a href="index.html#meta">¿Cuál es la meta?</a>
+                <a href="index.html#funcion">¿Cómo funciona?</a>
+                <a href="index.html#galeria">Fotos y vídeos</a>
+                <a href="index.html#compraPuntos">Compra puntos para donar</a>
+                <a href="index.html#conoceMas">Conoce más</a>
+                <a href="index.html#prensa">Prensa</a>
+            </div>
+        </nav>
+        <!--NAV DESKTOP-->
+        <nav class="navDesktop">
+            <div class="navDesktop__logos">
+                <img src="imagenes/bonus-logo.png" id="bonus-logo-nav" alt="bonus-logo">
+                <img src="imagenes/misiones-logo-nav.png" id="misiones-logo-nav" alt="misiones-logo-nav">
+            </div>
+            <div class="navDesktop__menu">
+                <a href="index.html" class="active">Dona aquí</a>
+                <a href="index.html#meta" class="">¿Cuál es la meta?</a>
+                <a href="index.html#funcion" class="">¿Cómo funciona?</a>
+                <a href="index.html#galeria" class="">Fotos y vídeos</a>
+                <a href="index.html#compraPuntos" class="">Compra puntos para donar</a>
+                <a href="index.html#conoceMas" class="">Conoce más</a>
+                <a href="index.html#prensa" class="">Prensa</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <img src="imagenes/donacion-uno.jpg" alt="donaciones">
+        <div class="formulario">
+            <div class="barra__progreso">
+                <div class="progreso__pasos">
+                    <span class="pasos borde">Paso 1</span>
+                    <span class="pasos">Paso 2</span>
+                    <span class="pasos">Paso 3</span>
+                </div>
+            </div>
+            <div class="multiform">
+                <form id="ingresoDatosUno">
+                    <label>Ingresa tus datos para donar:</label>
+                    <div id="input-document">
+                        <div><label class="type-document"> D.N.I</label><img class="modal-document" src="imagenes/seleccion_abajo.svg" alt="arrow-down"></div>
+                        <input type="number" name="document" id="docu" placeholder="Nº de documento">
+                        <div class="icon"><img src="imagenes/dni.svg" alt="dni"></div>
+                    </div>
+                    <div id="input-birthday">
+                        <label id="type-birthday">Fecha de nacimiento</label>
+                        <input type="text" name="birth" id="birthday" placeholder="Día / Mes / Año" maxlength="10">
+                        <div class="icon"><img src="imagenes/nacimiento.svg" alt="birthday"></div>
+                    </div>
+                    <div class="terms-list">
+                        <div class="terms">
+                            <input type="checkbox" name="terms" id="condiciones" class="moz-check">
+                            <label for="condiciones" id="terms-text">Acepto los <a href="#">términos y condiciones</a></label>
+                        </div>
+                    </div>
+                    <button id="donar-uno">DONA AQUÍ</button>
+                </form>
+
+                <form id="ingresoDatosDos">
+                    <label>Nombre titular:</label>
+                    <input type="text" name="nombreTit" id="nombreTitular">
+                    <label>Cuenta titular:</label>
+                    <input type="number" name="cuentaTit" id="cuentaTitular">
+                    <label>Saldo de Puntos:</label>
+                    <input type="number" name="SaldoPunt" id="SaldoPuntos">
+                    <label id="labelIngresaDatos">Ingresa aquí los puntos que deseas donar:</label>
+                    <input type="number" name="puntosDonac" id="puntosDonacion">
+                    <button id="donar-dos">DONA AQUÍ</button>
+                </form>
+
+                <form id="ingresoFinal">
+                    <h2>¡MUCHAS GRACIAS!</h2>
+                    <br/><br/>
+                    <p>Con tus puntos donados, madres de familia podrán retomar sus estudios 
+                        gracias a la implementación de <br/> <b>AULAS DE EMERGENCIA.</b>
+                    </p><br/>
+                    <p>Recuerda que Bonus duplicó tu donación</p>
+                    <br/>
+                    <a href="index.html" id="inicio">VOLVER AL INICIO</a>
+                </form>
+            </div>
+        </div>
+        <img src="imagenes/donacion-dos.jpg" alt="donaciones">
+    </main>
+
+    <!--MODAL-->
+    <div class="modal selec-doc des-sel">
+        <div class="modal__contenido">
+            <div id="close">
+                <button class="modal-close"><img src="imagenes/cerrar_popup_informacion.svg" alt="cerrar"></button>
+            </div>
+            <h2>SELECCIONA UN TIPO DE DOCUMENTO</h2>
+            <div class="modal__lista">
+                <button class="lista__botones" id="selec-dni">D.N.I</button>
+                <button class="lista__botones" id="selec-pasaporte">Pasaporte</button>
+                <button class="lista__botones" id="selec-ce">C.E</button>
+            </div>
+        </div>
+    </div>
+
+<script src="src/js/donacion.js"></script>
+</body>
+</html>
