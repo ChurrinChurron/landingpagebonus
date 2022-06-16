@@ -115,13 +115,13 @@ main {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    top: 8em;
+    top: 11em;
 }
 
 main > img {
 
-    width: 17em;
-    height: 16em;
+    width: 15em;
+    height: 15em;
     border-radius: 50%;
     display: none;
 }
@@ -147,7 +147,7 @@ main > img:last-child {
 
 .barra__progreso {
 
-    margin-bottom: 2.3em;
+    margin-bottom: 2.1em;
 }
 
 .progreso__pasos {
@@ -424,7 +424,7 @@ input[type="checkbox"]:checked::after {
     color: #0049ac;
     padding: 0.6em 2.8em;
     border-radius: 20px;
-    font-size: 17px;
+    font-size: 15px;
     transition: .4s;
     border: none;
     font-family: markProBold;
@@ -602,6 +602,11 @@ input[type="checkbox"]:checked::after {
         padding-bottom: 6px;
         border-bottom: 3px solid #0049ac;
         transition: .5;
+    }
+
+    main {
+
+        top: 8em;
     }
 
 }
