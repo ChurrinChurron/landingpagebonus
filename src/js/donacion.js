@@ -132,7 +132,7 @@ botonUno.addEventListener("click", e => {
 
     for(let i = 0; i < formulario.length; i++) {
 
-        formulario[i].style.right = "18em";
+        formulario[i].style.right = "21.5em";
     }
 
     for(let i = 0; i < pasos.length; i++) {
