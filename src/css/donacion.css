@@ -147,7 +147,7 @@ main > img:last-child {
 
 .barra__progreso {
 
-    margin-bottom: 2.6em;
+    margin-bottom: 2.3em;
 }
 
 .progreso__pasos {
@@ -170,7 +170,7 @@ main > img:last-child {
 
     margin: 0 0.8em;
     color: #6b6b6b;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .progreso__pasos > .borde {
@@ -185,17 +185,17 @@ main > img:last-child {
 
     display: flex;
     overflow: hidden;
-    width: 18em;
+    width: 19em;
     position: relative;
-    right: 0em;
+    right: -0.4em;
 }
 
 form {
 
     display: flex;
     flex-direction: column;
-    max-width: 26em;
-    margin: 0 3em 0 1em;
+    width: 26em;
+    margin: 0 4em 0 0.7em;
     position: relative;
     right: 0;
     transition: .4s;
@@ -208,6 +208,7 @@ form > label {
     font-weight: 700;
     margin-bottom: 1.6em;
     text-align: center;
+    font-size: 15px;
     
 }
 
@@ -224,11 +225,11 @@ input[type="number"], input[type="text"] {
     color: #373735;
     font-size: 15px;
     font-family: markPro;
-    padding: 0.5em 1em 0.5em 2.6em;
+    padding: 0.4em 1em 0.4em 2.6em;
     border-radius: 5px;
     margin-bottom: 17px;
     border: 1px solid transparent;
-    max-width: 26em;
+    width: 18.4em;
 }
 
 #input-document > .icon {
@@ -373,7 +374,7 @@ input[type="checkbox"]:checked::after {
     display: flex;
     text-align: left;
     color: #8b8b8b;
-    font-size: 15px;
+    font-size: 14px;
     font-family: markPro;
     margin-bottom: 14px;
     margin-left: 10px;
@@ -452,7 +453,9 @@ input[type="checkbox"]:checked::after {
 #ingresoFinal > h2 {
 
     color: #0049ac;
-    width: 11em;
+    width: 12.8em;
+    text-align: center;
+    font-size: 21px;
 }
 
 .modal {
