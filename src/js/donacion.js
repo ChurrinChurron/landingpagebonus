@@ -150,13 +150,13 @@ botonDos.addEventListener("click", e => {
 
         for(let i = 0; i < formulario.length; i++) {
 
-            formulario[i].style.right = "43em";
+            formulario[i].style.right = "43.8em";
         }
     } else if(window.innerWidth < 992) {
 
         for(let i = 0; i < formulario.length; i++) {
 
-            formulario[i].style.right = "36.8em";
+            formulario[i].style.right = "44em";
         }
     }
 
